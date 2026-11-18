@@ -1,7 +1,7 @@
 'use client'
 
 import Header from './components/Header';
-import Login from './components/Login';
+import Login from './components/login';
 import SectionHero from './components/SectionHero';
 import SectionSobre from './components/SectionSobre';
 import SectionFuncionalidades from './components/SectionFuncionalidades';
