@@ -35,7 +35,7 @@ export default function Headering({ autenticado, onLogout }) {
   return (
     <header className="header">
         <a className="logo" href="#">
-            FILMA<span>.AI</span> 
+            Hook<span>Off</span> 
         </a>
 
         <nav className="menu">
