@@ -1,0 +1,115 @@
+.heroImage {
+    display: flex;
+    justify-content: center;
+}
+
+.phoneMockup {
+    width: 100%;
+    max-width: 370px;
+    background: var(--navy-primary);
+    color: #ffffff;
+    border-radius: 32px;
+    padding: 24px;
+    border: 3px solid #244885;
+    box-shadow: 0 20px 40px rgba(14, 37, 75, 0.25);
+}
+
+.mockupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.mockupBadge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+
+.statusDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--alert-color);
+}
+
+.mockupStatus {
+    font-size: 0.82rem;
+    color: var(--alert-color);
+    font-weight: 700;
+}
+
+.mockupAlertBox {
+    background: var(--navy-card);
+    border: 1px solid #2c559c;
+    border-radius: 20px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+.mockupAlertTitle {
+    font-weight: 800;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.mockupAlertSub {
+    font-size: 0.85rem;
+    color: #bfd2f2;
+    margin-bottom: 14px;
+}
+
+.riskRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.riskLevel {
+    color: var(--alert-color);
+}
+
+.riskBar {
+    width: 100%;
+    height: 8px;
+    background: #254885;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.riskFill {
+    width: 87%;
+    height: 100%;
+    background: var(--alert-color);
+    border-radius: 999px;
+}
+
+.tagGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.riskTag {
+    background: var(--navy-primary);
+    border: 1px solid #3563b3;
+    color: #ffffff;
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+.mockupChatBubble {
+    background: #1b3f7d;
+    padding: 14px 16px;
+    border-radius: 18px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: #eef4ff;
+}
