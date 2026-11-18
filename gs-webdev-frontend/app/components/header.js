@@ -1,20 +1,22 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-export default function Headering({ autenticado, onLogout }) {
-  const [hora, setHora] = useState(new Date());
+export default function Header({ autenticado, usuarioAtual, onLogout }) {
+  const [hora, setHora] = useState('');
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const id = setInterval(() => setHora(new Date()), 1000);
+    setHora(new Date().toLocaleTimeString());
+    const id = setInterval(() => setHora(new Date().toLocaleTimeString()), 1000);
     return () => clearInterval(id);
   }, []);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('hookoff_theme');
     if (savedTheme === 'dark') {
       document.body.classList.add('dark');
+      setIsDark(true);
     }
   }, []);
 
@@ -22,39 +24,47 @@ export default function Headering({ autenticado, onLogout }) {
     e.preventDefault();
     const novoTema = !isDark;
     setIsDark(novoTema);
-    
+
     if (novoTema) {
       document.body.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      localStorage.setItem('hookoff_theme', 'dark');
     } else {
       document.body.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      localStorage.setItem('hookoff_theme', 'light');
     }
   };
 
   return (
     <header className="header">
-        <a className="logo" href="#">
-            Hook<span>Off</span> 
-        </a>
+      <a className="logo-link" href="#inicio">
+        <img src="/peixe.png" alt="HookOff Logo" className="logo-img" />
+      </a>
 
-        <nav className="menu">
-            <a className="tema" href="#tema" onClick={toggleTheme} aria-label="Alternar Tema">
-              <img src="/logo.png" alt="Tema"/>
-            </a>
-            {autenticado && (
-              <>
-                <a href="#inicio">Início</a>
-                <a href="#projetos">Projeto</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-                <button onClick={onLogout} className="logout-button">
-                  Sair
-                </button>
-              </>
-            )}
-            <p>{hora.toLocaleTimeString()}</p>
-        </nav>
+      <nav className="menu">
+        <button
+          type="button"
+          className="tema-btn"
+          onClick={toggleTheme}
+          aria-label="Alternar Tema"
+          title="Alternar tema claro/escuro"
+        >
+          {isDark ? '☀️' : '🌙'}
+        </button>
+
+        {autenticado && (
+          <>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">O Projeto</a>
+            <a href="#funcionalidades">Como Funciona</a>
+            <a href="#comunidade">Comunidade</a>
+            <span className="user-badge">Olá, {usuarioAtual}</span>
+            <button onClick={onLogout} className="logout-button">
+              Sair
+            </button>
+          </>
+        )}
+        <p className="relogio">{hora}</p>
+      </nav>
     </header>
   );
 }
