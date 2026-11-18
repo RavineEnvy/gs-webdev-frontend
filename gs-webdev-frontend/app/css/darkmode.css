@@ -1,0 +1,62 @@
+body.dark {
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+body.dark .header {
+    border-bottom-color: var(--border-dark);
+}
+
+body.dark .menu a {
+    color: #d0dcf0;
+}
+
+body.dark .menu a:hover {
+    color: var(--brand-color);
+}
+
+body.dark .card,
+body.dark .login-card,
+body.dark .cardProcesso {
+    background: var(--navy-primary);
+    border-color: var(--border-dark);
+    color: var(--text-light);
+}
+
+body.dark .card:hover {
+    background: var(--navy-card);
+    border-color: var(--brand-color);
+}
+
+body.dark .card p,
+body.dark .sectionHeading p,
+body.dark .about p,
+body.dark .login-desc,
+body.dark .heroContent > p {
+    color: #c5d4ec;
+}
+
+body.dark .about {
+    background: var(--navy-primary);
+    border-color: var(--brand-color);
+}
+
+body.dark .button {
+    background: var(--brand-color);
+    color: #ffffff;
+}
+
+body.dark .button:hover {
+    background: #1c62db;
+}
+
+body.dark .button-secondary {
+    background: transparent;
+    border: 2px solid var(--brand-color);
+    color: var(--text-light);
+}
+
+body.dark .footer {
+    border-top-color: var(--border-dark);
+    color: #9fb3d4;
+}
