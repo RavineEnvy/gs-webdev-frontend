@@ -1,0 +1,118 @@
+.cardProcesso {
+    margin: 56px 0;
+    width: 100%;
+    padding: 36px;
+    border: 1px solid var(--brand-color);
+    border-radius: 24px;
+    background: #ffffff;
+}
+
+.cardProcesso h3 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.cardProcesso > p {
+    color: #556785;
+    margin-bottom: 24px;
+}
+
+body.dark .cardProcesso > p {
+    color: #c5d4ec;
+}
+
+.feedbackForm {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.feedbackForm input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border-light);
+    font-size: 0.95rem;
+    outline: none;
+    background: var(--bg-light);
+    color: inherit;
+}
+
+body.dark .feedbackForm input {
+    background: var(--bg-dark);
+    border-color: var(--border-dark);
+}
+
+.feedbackLista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.feedbackItem {
+    padding: 18px;
+    border-radius: 16px;
+    background: var(--bg-light);
+    border: 1px solid var(--border-light);
+}
+
+body.dark .feedbackItem {
+    background: var(--navy-card);
+    border-color: var(--border-dark);
+}
+
+.feedbackHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    margin-bottom: 8px;
+}
+
+.feedbackHeader span {
+    color: #6b7d99;
+    font-size: 0.8rem;
+}
+
+.feedbackTexto {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.feedbackAcoes {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-acao {
+    background: none;
+    border: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+.btn-acao.excluir {
+    color: var(--alert-color);
+}
+
+.btn-acao.salvar {
+    color: #2e7d32;
+}
+
+.feedbackEditBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.feedbackEditBox input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--brand-color);
+    background: #ffffff;
+    color: var(--text-dark);
+}
