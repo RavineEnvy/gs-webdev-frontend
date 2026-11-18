@@ -75,3 +75,33 @@ header {
 .logout-button:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 14px 16px;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .logo-img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 14px;
+    }
+
+    .menu a,
+    .user-badge,
+    .logout-button {
+        font-size: 0.85rem;
+    }
+
+    .relogio {
+        font-size: 0.78rem;
+    }
+}

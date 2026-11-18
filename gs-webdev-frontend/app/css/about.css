@@ -123,3 +123,59 @@ body.dark .cardTag {
 body.dark .cardDetailBox {
     border-top-color: var(--border-dark);
 }
+
+@media (max-width: 480px) {
+    .about {
+        width: calc(100% - 32px);
+        margin: 8px auto 40px;
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+    .about h2 {
+        font-size: 1.65rem;
+    }
+
+    .about p {
+        font-size: 0.94rem;
+    }
+
+    .section {
+        width: calc(100% - 32px);
+        padding: 12px 0;
+    }
+
+    .sectionHeading {
+        margin-bottom: 24px;
+    }
+
+    .sectionHeading h2 {
+        font-size: 1.75rem;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .cardTop {
+        margin-bottom: 18px;
+    }
+
+    .card h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Em telas touch (mobile), exibe os detalhes diretamente sem depender de hover */
+    .cardDetails {
+        max-height: none;
+        opacity: 1;
+        margin-top: 14px;
+    }
+}

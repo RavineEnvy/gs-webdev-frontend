@@ -76,3 +76,40 @@ body.dark .hero h1 {
     background: var(--navy-primary);
     color: #ffffff;
 }
+@media (max-width: 480px) {
+    .hero {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        padding: 32px 0;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .eyebrow {
+        font-size: 0.7rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+        line-height: 1.1;
+    }
+
+    .heroContent > p {
+        font-size: 0.95rem;
+        margin: 16px 0 24px;
+    }
+
+    .heroActions {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 13px 18px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

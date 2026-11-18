@@ -113,3 +113,41 @@
     line-height: 1.45;
     color: #eef4ff;
 }
+
+@media (max-width: 480px) {
+    .phoneMockup {
+        padding: 18px;
+        border-radius: 24px;
+    }
+
+    .mockupHeader {
+        margin-bottom: 14px;
+    }
+
+    .mockupBadge {
+        font-size: 0.98rem;
+    }
+
+    .mockupStatus {
+        font-size: 0.75rem;
+    }
+
+    .mockupAlertBox {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .mockupAlertTitle {
+        font-size: 0.95rem;
+    }
+
+    .mockupAlertSub,
+    .mockupChatBubble {
+        font-size: 0.82rem;
+    }
+
+    .riskTag {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+}

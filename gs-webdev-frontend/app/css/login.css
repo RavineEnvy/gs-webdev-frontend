@@ -96,3 +96,29 @@ body.dark .login-success {
     text-decoration: underline;
     font-family: inherit;
 }
+
+@media (max-width: 480px) {
+    .login-section {
+        min-height: 70vh;
+        padding: 16px 0;
+    }
+
+    .login-card {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .login-title {
+        font-size: 1.55rem;
+    }
+
+    .login-desc {
+        font-size: 0.88rem;
+        margin-bottom: 18px;
+    }
+
+    .login-field input {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+}

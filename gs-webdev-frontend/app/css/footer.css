@@ -14,3 +14,17 @@
     flex-wrap: wrap;
     gap: 12px;
 }
+
+@media (max-width: 480px) {
+    .footer {
+        width: calc(100% - 32px);
+        padding: 22px 0 32px;
+        font-size: 0.82rem;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
