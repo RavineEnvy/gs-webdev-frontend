@@ -5,13 +5,13 @@ import { useState, useEffect } from 'react';
 const MENSAGENS_INICIAIS = [
   {
     id: 1,
-    autor: 'Dona Helena (68 anos)',
+    autor: 'Dona Helena',
     texto: 'Interface muito simples de entender. Me sinto muito mais segura usando o WhatsApp agora.',
     data: '18/11/2026'
   },
   {
     id: 2,
-    autor: 'Carlos Eduardo (Filho)',
+    autor: 'Carlos Eduardo',
     texto: 'Instalei no celular do meu pai para evitar que ele caia em links falsos de prêmios e bancos.',
     data: '18/11/2026'
   }
