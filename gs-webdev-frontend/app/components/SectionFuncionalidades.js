@@ -40,10 +40,10 @@ const RECURSOS_HOOKOFF = [
   },
   {
     numero: '06',
-    titulo: 'Tranquilidade para a Família',
-    descricao: 'Mais autonomia digital para os idosos e menos preocupação para filhos e netos.',
+    titulo: 'Mebros da Equipe',
+    descricao: 'Arthur Sampaio - RM: 569499 / Guilherme Freire - RM: 570669 / João Gabriel - RM: 573891',
     detalhe: 'Desenvolvido na Global Solution 2026 com foco em inclusão digital segura e prevenção contra fraudes.',
-    destaqueTag: 'Impacto Social'
+    destaqueTag: 'Equipe'
   }
 ];
 

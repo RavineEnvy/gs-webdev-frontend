@@ -1,0 +1,28 @@
+.api-grid {
+    margin-top: 20px;
+}
+
+.api-card {
+    min-height: auto;
+}
+
+.api-card-title {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.api-card-desc {
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+}
+
+.api-actions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.api-actions .btn-acao:first-child {
+    margin-right: 12px;
+}

@@ -7,7 +7,7 @@ const MENSAGENS_INICIAIS = [
     id: 1,
     autor: 'Dona Helena',
     texto: 'Interface muito simples de entender. Me sinto muito mais segura usando o WhatsApp agora.',
-    data: '18/11/2026'
+    data: '15/02/2027'
   },
   {
     id: 2,

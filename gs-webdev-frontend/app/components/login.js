@@ -23,23 +23,26 @@ export default function Login({ onLogin, onCadastrar, erro, sucesso }) {
   return (
     <section className="section login-section">
       <div className="login-card">
-        <h2 className="login-title">
-          {isRegistro ? 'Criar Conta' : 'Login'} <span>FILMA.AI</span>
-        </h2>
-        <p className="login-desc">
-          {isRegistro 
-            ? 'Registe um novo utilizador para aceder ao sistema.' 
-            : 'Entre com as suas credenciais ou crie uma conta.'}
-        </p>
+        <div className="login-brand">
+          <span className="eyebrow">PROTEÇÃO DIGITAL</span>
+          <h2 className="login-title">
+            {isRegistro ? 'Criar Conta' : 'Acessar'} Hook<span>off</span>
+          </h2>
+          <p className="login-desc">
+            {isRegistro
+              ? 'Cadastre um usuário para conhecer todos os detalhes do aplicativo.'
+              : 'Entre com sua conta ou utilize o acesso padrão (admin / 123456).'}
+          </p>
+        </div>
 
         <form onSubmit={handleSubmit} className="login-form">
           <div className="login-field">
             <label htmlFor="usuario">Usuário:</label>
-            <input 
+            <input
               id="usuario"
-              type="text" 
-              value={usuario} 
-              onChange={(e) => setUsuario(e.target.value)} 
+              type="text"
+              value={usuario}
+              onChange={(e) => setUsuario(e.target.value)}
               placeholder="Ex: admin"
               required
             />
@@ -47,11 +50,11 @@ export default function Login({ onLogin, onCadastrar, erro, sucesso }) {
 
           <div className="login-field">
             <label htmlFor="senha">Senha:</label>
-            <input 
+            <input
               id="senha"
-              type="password" 
-              value={senha} 
-              onChange={(e) => setSenha(e.target.value)} 
+              type="password"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
               placeholder="Ex: 123456"
               required
             />
@@ -61,12 +64,12 @@ export default function Login({ onLogin, onCadastrar, erro, sucesso }) {
           {sucesso && <p className="login-success">{sucesso}</p>}
 
           <button type="submit" className="button login-button">
-            {isRegistro ? 'Cadastrar Conta' : 'Entrar no Sistema'}
+            {isRegistro ? 'Finalizar Cadastro' : 'Entrar na Plataforma'}
           </button>
 
           <div className="login-toggle-container">
-            <button 
-              type="button" 
+            <button
+              type="button"
               className="login-toggle-btn"
               onClick={() => {
                 setIsRegistro(!isRegistro);
@@ -74,7 +77,7 @@ export default function Login({ onLogin, onCadastrar, erro, sucesso }) {
                 setSenha('');
               }}
             >
-              {isRegistro ? 'Já tem uma conta? Faça login' : 'Não tem conta? Cadastre-se'}
+              {isRegistro ? 'Já possui conta? Faça login' : 'Não tem conta? Cadastre-se'}
             </button>
           </div>
         </form>

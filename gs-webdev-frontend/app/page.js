@@ -8,6 +8,7 @@ import SectionFuncionalidades from './components/SectionFuncionalidades';
 import SectionDepoimentos from './components/SectionDepoimentos';
 import Footer from './components/Footer';
 import { useAutenticacao } from './hooks/useAutenticacao';
+import SectionApi from './components/SectionApi';
 
 export default function Home() {
   const {
@@ -45,6 +46,7 @@ export default function Home() {
             <SectionSobre />
             <SectionFuncionalidades />
             <SectionDepoimentos usuarioAtual={usuarioAtual} />
+            <SectionApi />
           </>
         )}
       </main>
