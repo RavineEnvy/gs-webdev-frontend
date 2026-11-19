@@ -2,6 +2,15 @@
 
 Projeto web desenvolvido como parte da avaliação da Global Solution.
 
+
+---
+
+## Membros
+
+- **Arthur Sampaio** - RM: 569499
+- **Guilherme Freire** - RM: 570669
+- **João Gabriel** - RM: 573891
+
 ---
 
 ## Tecnologias Utilizadas
