@@ -1,4 +1,4 @@
-# Global Solution - Front-End / Web Development - 04
+# Global Solution - Front-End / Web Development
 
 Projeto web desenvolvido como parte da avaliação da Global Solution.
 
