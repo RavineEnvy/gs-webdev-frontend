@@ -101,4 +101,4 @@ Os dados serão armazenados no `LocalStorage` do navegador e poderão ser utiliz
 
 O projeto está disponível online através da plataforma Vercel:
 
-- **Vercel:** https://vercel.com/ravineenvys-projects/gs-webdev-frontend
+- **Vercel:** https://gs-webdev-frontend.vercel.app/
